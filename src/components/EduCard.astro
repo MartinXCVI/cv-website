@@ -1,0 +1,25 @@
+---
+interface Props {
+	year: number;
+	institution: string;
+	field: string;
+	location: string;
+	description: string;
+}
+
+const { year, institution, field, location, description } = Astro.props;
+---
+
+<article class="edu-card">
+	<h3 class="edu-year">{year}</h3>
+	<h3 class="institution-name">{institution}</h3>
+	<p class="career-name">{field}</p>
+	<small class="institution-location">{location}</small>
+	<p class="career-description">{description}</p>
+</article>
+
+<style>
+	.institution-location {
+		font-style: italic;
+	}
+</style>

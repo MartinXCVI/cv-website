@@ -1,0 +1,34 @@
+---
+interface Props {
+	year: number;
+	job: string;
+	company: string;
+	location: string;
+	description: string;
+}
+
+const { year, job, company, location, description } = Astro.props;
+---
+
+<article class="job-card">
+	<h3 class="job-year">{year}</h3>
+	<h3 class="job-name">{job}</h3>
+	<p class="company-name">{company}</p>
+	<small class="company-location">{location}</small>
+	<p class="job-description">{description}</p>
+</article>
+
+<style>
+	.job-card {
+		width: 75%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.company-location {
+		font-style: italic;
+	}
+
+</style>

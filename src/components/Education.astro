@@ -1,0 +1,42 @@
+---
+import EduCard from "./EduCard.astro"
+---
+
+<section class="education-wrapper">
+  <h2>Education</h2>
+  <section class="education-section">
+    <EduCard
+      year={2018}
+      institution="Uni/Institute Name"
+      field="Your Career/Field of study"
+      location="Uni/Institute Location"
+      description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora sapiente nostrum inventore ipsa facere laboriosam possimus consequuntur laborum perferendis."
+    />
+    <EduCard
+      year={2016}
+      institution="Uni/Institute Name"
+      field="Your Career/Field of study"
+      location="Uni/Institute Location"
+      description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora sapiente nostrum inventore ipsa facere laboriosam possimus consequuntur laborum perferendis."
+    />
+  </section>
+</section>
+
+<style>
+  .education-wrapper {
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .education-section {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+</style>
