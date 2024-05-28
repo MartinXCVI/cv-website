@@ -1,17 +1,24 @@
 ---
 ---
 
-<section class="landing-wrapper">
+<section class="landing-wrapper" id="welcome">
   <section class="landing-section">
     <section class="landing-info">
-      <h2>My Name Here</h2>
-      <h3>Profession/Job</h3>
+      <h2 class="my-name">My Name Here</h2>
+      <h3 class="my-job">Profession/Job Name Here</h3>
     </section>
     <section class="landing-data">
-      <p><strong>Phone: </strong>+12-123-456-7890</p>
-      <p><strong>Email: </strong>emailsomething@domain.com</p>
-      <p><strong>Location: </strong>City, State - Country</p>
+      <p class="basic-data"><i class="fa-solid fa-phone"></i> <strong>Phone: </strong>+12-123-456-7890</p>
+      <p class="basic-data"><i class="fa-solid fa-envelope"></i> <strong>Email: </strong>emailsomething@domain.com</p>
+      <p class="basic-data"><i class="fa-solid fa-map-location-dot"></i> <strong>Location: </strong>City, State - Country</p>
+      <section class="landing-social">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      </section>
     </section>
+    
   </section>
   <section class="profile-section">
     <figure class="profile-fig">
@@ -45,6 +52,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.landing-social {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landing-social a {
+  color: #000;
+}
+
+.my-name {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.my-job {
+  margin-bottom: 2rem;
+}
+
+.basic-data {
+  margin-bottom: 1rem;
 }
 
 .profile-section {
@@ -62,11 +94,26 @@
 }
 
 .profile-fig {
-  width: 45%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 .profile-img {
   width: 100%;
   border-radius: 1rem;
+  filter: drop-shadow(0rem 0rem 0.05rem lightgray );
+
+  transition: 0.3s linear;
+}
+
+.profile-img:hover {
+  filter: drop-shadow(0rem 0rem 0.2rem lightgray );
 }
 </style>

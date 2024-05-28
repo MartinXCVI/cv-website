@@ -12,23 +12,32 @@ const { year, job, company, location, description } = Astro.props;
 
 <article class="job-card">
 	<h3 class="job-year">{year}</h3>
-	<h3 class="job-name">{job}</h3>
-	<p class="company-name">{company}</p>
-	<small class="company-location">{location}</small>
-	<p class="job-description">{description}</p>
+	<h3 class="job-name"><i class="fa-solid fa-business-time icon-size"></i> {job}</h3>
+	<p class="company-name"><i class="fa-solid fa-building icon-size"></i> {company}</p>
+	<p class="company-location"><i class="fa-solid fa-location-dot icon-size"></i> <small>{location}</small></p>
+	<p class="job-description"> {description}</p>
 </article>
 
 <style>
 	.job-card {
-		width: 75%;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
+		margin-bottom: 2rem;
 	}
 
-	.company-location {
-		font-style: italic;
+	.job-year {
+		margin-bottom: 1.5rem;
 	}
+	.job-name, .company-name, .company-location, .job-description {
+		margin-bottom: 1rem;
+	}
+
+	.company-name {
+		font-weight: bold;
+	}
+
 
 </style>

@@ -2,30 +2,29 @@
 ---
 
 <section class="contact-wrapper">
-  <h2>Contact Me</h2>
   <form action="" id="contact-form">
     <fieldset>
-      <legend>Contact Form</legend>
+      <legend>Contact Me</legend>
       <div class="form-div">
-        <label for="fullname-input">Full Name:</label>
+        <label for="fullname-input"><i class="fa-solid fa-user"></i> Full Name:</label>
         <input type="text" name="fullname" id="fullname-input">
       </div>
       <div class="form-div">
-        <label for="email-input">Email:</label>
+        <label for="email-input"><i class="fa-solid fa-envelope"></i> Email:</label>
         <input type="email" name="email" id="email-input">
       </div>
       <div class="form-div">
-        <label for="subject-input">Subject</label>
+        <label for="subject-input"><i class="fa-solid fa-pen"></i> Subject</label>
         <input type="text" name="subject" id="subject-input">
       </div>
       <div class="form-div">
-        <label for="msg-input">Message:</label>
+        <label for="msg-input"><i class="fa-solid fa-message"></i> Message:</label>
         <textarea name="message" id="msg-input" cols="10" rows="10"></textarea>
       </div>
     </fieldset>
     <section class="form-buttons">
-      <button type="submit" id="send-btn" class="form-btn">Send</button>
-      <button type="reset" id="reset-btn" class="form-btn">Reset</button>
+      <button type="submit" id="send-btn" class="form-btn"><i class="fa-solid fa-paper-plane"></i> Send</button>
+      <button type="reset" id="reset-btn" class="form-btn"><i class="fa-solid fa-eraser"></i> Reset</button>
     </section>
   </form>
 </section>
@@ -41,7 +40,7 @@
   }
 
   #contact-form {
-    width: 75%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,7 +61,9 @@
 
   #contact-form fieldset legend {
     text-align: center;
-    padding-inline: 0.5rem;
+    padding-inline: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: bold;
   }
 
   .form-div {
@@ -101,6 +102,10 @@
     border-radius: 0.25rem;
     color: white;
     text-shadow: 0 0 0.1rem #000;
+  }
+
+  .form-btn:hover {
+    cursor: pointer;
   }
 
   #send-btn {

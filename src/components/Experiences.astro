@@ -2,9 +2,9 @@
 import JobCard from "./JobCard.astro"
 ---
 
-<section class="experience-wrapper">
+<section class="experience-wrapper" id="experiences">
   <section class="experience-section">
-    <h2>Experiences</h2>
+    <h2 class="subtitles">Experiences</h2>
     <JobCard 
       year={2024}
       job="Current Job Name"
@@ -40,7 +40,7 @@ import JobCard from "./JobCard.astro"
   }
 
   .experience-section {
-    width: 100%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;

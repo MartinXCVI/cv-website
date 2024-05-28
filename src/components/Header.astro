@@ -2,12 +2,12 @@
 ---
 
 <header>
-  <h1 class="page-title">Curriculum Vitae</h1>
+  <h1 class="page-title"><a href="#welcome">Curriculum Vitae</a></h1>
   <nav class="navbar">
     <ul>
-      <li>About Me</li>
-      <li>CV</li>
-      <li>Contact</li>
+      <li><a href="#about-me"><i class="fa-regular fa-id-card"></i> About Me</a></li>
+      <li><a href="#experiences"><i class="fa-regular fa-file-lines"></i> CV</a></li>
+      <li><a href="#contact-form"><i class="fa-solid fa-envelope-open-text"></i> Contact</a></li>
     </ul>
   </nav>
   
@@ -19,10 +19,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
+  }
+
+  .navbar ul li a {
+    color: #000;
   }
 
   .page-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
+  }
+
+  .page-title a {
+    color: #000;
+    text-decoration: none;
   }
 
   .navbar {
