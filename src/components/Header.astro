@@ -3,6 +3,7 @@
 
 <header>
   <h1 class="page-title"><a href="#welcome">Curriculum Vitae</a></h1>
+  <a href="/data/astro-curriculum.pdf" class="download-btn" download="">Download CV</a>
   <nav class="navbar">
     <ul>
       <li><a href="#about-me"><i class="fa-regular fa-id-card"></i> About Me</a></li>
@@ -19,6 +20,23 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+  }
+
+  .download-btn {
+    background-color: seagreen;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    z-index: 1000;
+    transition: 0.2s linear;
+  }
+
+  .download-btn:hover {
+    background-color: springgreen;
   }
 
   .navbar ul li a {
@@ -63,6 +81,13 @@
     flex-direction: column;
   }
 
+  .download-btn {
+    position: unset;
+    top: unset;
+    right: unset;
+    margin-bottom: 1.5rem;
+  }
+
   header h1 {
     margin-bottom: 1rem;
   }
@@ -70,6 +95,7 @@
   .navbar ul {
     flex-direction: column;
     gap: 1rem;
+    margin-bottom: 0.5rem;
   }
 }
 
