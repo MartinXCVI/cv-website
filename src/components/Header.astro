@@ -10,7 +10,6 @@
       <li><a href="#contact-form"><i class="fa-solid fa-envelope-open-text"></i> Contact</a></li>
     </ul>
   </nav>
-  
 </header>
 
 <style>
@@ -45,5 +44,22 @@
     align-items: center;
     list-style: none;
   }
+
+  @media all and (max-width: 959px) {
+
+  header {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  header h1 {
+    margin-bottom: 1rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
 
 </style>

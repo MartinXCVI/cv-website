@@ -14,7 +14,7 @@
         <input type="email" name="email" id="email-input">
       </div>
       <div class="form-div">
-        <label for="subject-input"><i class="fa-solid fa-pen"></i> Subject</label>
+        <label for="subject-input"><i class="fa-solid fa-pen"></i> Subject:</label>
         <input type="text" name="subject" id="subject-input">
       </div>
       <div class="form-div">
@@ -114,6 +114,27 @@
 
   #reset-btn {
     background-color: orangered;
+  }
+
+  @media all and (max-width: 767px) {
+
+    #contact-form fieldset {
+      width: 100%;
+    }
+
+  }
+
+  @media all and (max-width: 959px) {
+
+    .contact-wrapper {
+      width: 100%;
+      margin-bottom: 5rem;
+    }
+
+    #contact-form fieldset {
+      width: 80%;
+    }
+
   }
 
 </style>

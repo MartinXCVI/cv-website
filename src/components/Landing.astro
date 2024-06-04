@@ -18,7 +18,6 @@
         <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
       </section>
     </section>
-    
   </section>
   <section class="profile-section">
     <figure class="profile-fig">
@@ -85,12 +84,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
   position: fixed;
   right: 0;
   top: 0;
   background-color: slategray;
-  
 }
 
 .profile-fig {
@@ -116,4 +113,83 @@
 .profile-img:hover {
   filter: drop-shadow(0rem 0rem 0.2rem lightgray );
 }
+
+
+
+
+
+/*------ to 767px -------*/
+
+@media all and (max-width: 767px) {
+
+  .landing-section {
+    margin-bottom: 5rem;
+  }
+
+  .profile-section {
+    margin-bottom: 3rem;
+  }
+
+  .profile-fig {
+    width: 80% !important;
+  }
+}
+
+@media all and (max-width: 959px) {
+
+  .landing-wrapper {
+    flex-direction: column-reverse
+  }
+
+  .landing-section {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .landing-info, .landing-data {
+    align-items: center;
+  }
+
+  .profile-section {
+    width: 100%;
+    position: unset;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .profile-fig {
+    width: 50%;
+    border-top: 0px solid lightgray;
+    border-bottom: 0px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+  }
+
+}
+
+/*------ to 479px -------*/
+
+@media all and (max-width: 479px) {
+
+  .landing-info, .landing-data {
+    align-items: flex-start;
+  }
+
+}
+
+/*------ to 375px -------*/
+
+@media all and (max-width: 375px) {
+
+  .my-name {
+    font-size: 2.25rem;
+  }
+
+  .profile-fig {
+    width: 90%;
+  }
+
+}
+
 </style>
