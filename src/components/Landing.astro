@@ -12,10 +12,10 @@
       <p class="basic-data"><i class="fa-solid fa-envelope"></i> <strong>Email: </strong>emailsomething@domain.com</p>
       <p class="basic-data"><i class="fa-solid fa-map-location-dot"></i> <strong>Location: </strong>City, State - Country</p>
       <section class="landing-social">
-        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fb-icon"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin lk-icon"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram ig-icon"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube yt-icon"></i></a>
       </section>
     </section>
   </section>
@@ -63,6 +63,26 @@
 
 .landing-social a {
   color: #000;
+}
+
+.fb-icon, .lk-icon, .ig-icon, .yt-icon {
+  transition: 0.3s linear;
+}
+
+.fb-icon:hover {
+  color: #3b5998;
+}
+
+.lk-icon:hover {
+  color: #0072b1;
+}
+
+.ig-icon:hover {
+  color: #ee2a7b;
+}
+
+.yt-icon:hover {
+  color: #FF0000;
 }
 
 .my-name {
