@@ -2,27 +2,37 @@
 ---
 
 <section class="contact-wrapper">
-  <form action="" id="contact-form">
+  <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
     <fieldset>
       <legend>Contact Me</legend>
+      <input type="hidden" name="access_key" value="205881c5-0bfa-4e93-9523-81f375f5c37d">
+      <input type="hidden" name="from_name" value="CV Website">
       <div class="form-div">
         <label for="fullname-input"><i class="fa-solid fa-user"></i> Full Name:</label>
-        <input type="text" name="fullname" id="fullname-input">
+        <input type="text" name="full-name" id="fullname-input" minlength="6" maxlength="70" required placeholder="Your full name here">
       </div>
       <div class="form-div">
         <label for="email-input"><i class="fa-solid fa-envelope"></i> Email:</label>
-        <input type="email" name="email" id="email-input">
+        <input type="email" name="email" id="email-input" maxlength="100" required placeholder="Your email here">
+      </div>
+      <div class="form-div">
+        <label for="email-input"><i class="fa-solid fa-phone"></i> Telephone:</label>
+        <input type="tel" name="telephone" id="telephone-input" min="7" max="15" required placeholder="Your telephone number here">
       </div>
       <div class="form-div">
         <label for="subject-input"><i class="fa-solid fa-pen"></i> Subject:</label>
-        <input type="text" name="subject" id="subject-input">
+        <input type="text" name="subject" id="subject-input" minlength="6" maxlength="100" required placeholder="Your subject here">
       </div>
       <div class="form-div">
         <label for="msg-input"><i class="fa-solid fa-message"></i> Message:</label>
-        <textarea name="message" id="msg-input" cols="10" rows="10"></textarea>
+        <textarea name="message" id="msg-input" cols="10" rows="10" minlength="20" maxlength="400" required placeholder="Your message here"></textarea>
       </div>
+      <p class="success-para"></p>
+      <p class="error-para"></p>
     </fieldset>
+    <input type="checkbox" name="botcheck" id="botckeck-input" style="display: none;">
     <section class="form-buttons">
+      <input type="hidden" name="redirect" value="https://web3forms.com/success">
       <button type="submit" id="send-btn" class="form-btn"><i class="fa-solid fa-paper-plane"></i> Send</button>
       <button type="reset" id="reset-btn" class="form-btn"><i class="fa-solid fa-eraser"></i> Reset</button>
     </section>
@@ -126,6 +136,14 @@
 
   #reset-btn:hover {
     background-color: crimson;
+  }
+
+  .success-para {
+    color: seagreen;
+  }
+
+  .error-para {
+    color: crimson;
   }
 
   @media all and (max-width: 767px) {
