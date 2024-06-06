@@ -58,15 +58,32 @@ const { title } = Astro.props;
 		font-weight: 500;
 	}
 
-	.subtitles {
+	.subtitle-div {
 		width: 100%;
-		text-align: left;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
 		margin-bottom: 2rem;
+	}
+
+	.lateral-line {
+		width: 100%;
+		border-top: 0.1rem solid slategray;
+	}
+
+	.subtitles {
+		min-width: 30% !important;
+		text-align: left;
 	}
 
 	.icon-size {
 		font-size: 1rem;
 	}
 
+	@media all and (max-width: 575px) {
+		.lateral-line {
+			display: none;
+		}
+	}
 	
 </style>
