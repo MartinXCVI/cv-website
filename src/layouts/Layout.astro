@@ -1,5 +1,6 @@
 ---
 import 'aos/dist/aos.css';
+import AOS from "aos"
 
 interface Props {
 	title: string;
@@ -15,6 +16,7 @@ const { title } = Astro.props;
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<!---- Icons from Fontawesome CDN ---->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<!---- Google fonts of Ubuntu {font-family: "Ubuntu", sans-serif;} {font-family: "Ubuntu Sans", sans-serif;} {font-family: "Ubuntu Condensed", sans-serif; and 'Playfair Display' {font-family: "Playfair Display", serif;}} ---->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,9 +28,15 @@ const { title } = Astro.props;
 	<body>
 		<slot />
 	</body>
-	<script type="module" src="/src/js/hamMenu.js"></script>
-	<script type="module" src="/src/js/contactForm.js"></script>
-	<script type="module" src="/src/js/aos.js"></script>
+	<script is:inline src="./js/hamMenu.js"></script>
+	<script is:inline src="./js/contactForm.js"></script>
+	<script is:inline src="/js/aos.js"></script>
+	<script>
+    import { aosInit } from "/public/js/aos.js";
+
+    // runs on initial page load
+    aosInit();
+  </script>
 </html>
 
 <style is:global>
