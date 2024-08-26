@@ -1,6 +1,6 @@
 import AOS from "aos";
 
-export function aosInit() {
+export default function aosInit() {
   AOS.init();
 }
 

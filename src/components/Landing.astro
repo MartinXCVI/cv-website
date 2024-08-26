@@ -8,9 +8,9 @@
       <h3 class="my-job">Profession/Job Name Here</h3>
     </section>
     <section class="landing-data">
-      <p class="basic-data"><i class="fa-solid fa-phone"></i> <strong>Phone: </strong>+12-123-456-7890</p>
-      <p class="basic-data"><i class="fa-solid fa-envelope"></i> <strong>Email: </strong>emailsomething@domain.com</p>
-      <p class="basic-data"><i class="fa-solid fa-map-location-dot"></i> <strong>Location: </strong>City, State - Country</p>
+      <p class="basic-data"><a href="tel:12-123-456-7890"><i class="fa-solid fa-phone"></i> <strong>Phone: </strong>+12-123-456-7890</a></p>
+      <p class="basic-data"><a href="mailto:emailsomething@domain.com"><i class="fa-solid fa-envelope"></i> <strong>Email: </strong>emailsomething@domain.com</a></p>
+      <p class="basic-data"><a href="https://maps.app.goo.gl/F7n4Ys3UasL8XhAp7" target="_blank"><i class="fa-solid fa-map-location-dot"></i> <strong>Location: </strong>City, State - Country</a></p>
       <section class="landing-social">
         <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fb-icon"></i></a>
         <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin lk-icon"></i></a>
@@ -52,6 +52,17 @@
   justify-content: center;
   align-items: flex-start;
   margin-bottom: 1rem;
+}
+
+.basic-data a {
+  color: initial;
+  text-decoration: none;
+  transition: 0.2s linear all;
+}
+
+.basic-data a:hover {
+  color: darkslategrey;
+  text-decoration: underline;
 }
 
 .landing-social {
