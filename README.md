@@ -4,7 +4,7 @@
 
 ## 📄 Introduction
 
-Minimalist yet elegant template for a curriculum vitae website. Single page project of 5 sections: *Intro*, *about*, *skills*, *experience*, *education*, and *contact*. Download button for downloading a `.pdf` file of your resume. Contact form powered with [Web3Forms](https://web3forms.com/).
+Minimalist yet elegant template for a curriculum vitae website. Single page project of 6 sections: *Intro*, *about*, *skills*, *experience*, *education*, and *contact*. Download button for downloading a `.pdf` file of your resume. Contact form powered with [Web3Forms](https://web3forms.com/).
 
 ### Developed with:
 
@@ -19,7 +19,7 @@ Minimalist yet elegant template for a curriculum vitae website. Single page proj
 
 ### Cloning it
 
-Copy the command below with the link :
+Copy the command below with the link:
 
 ```
 git clone https://github.com/MartinXCVI/cv-website
